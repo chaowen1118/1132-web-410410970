@@ -87,6 +87,13 @@ img {
   gap: 2rem;
 }
 
+@media screen and (max-width: 450px) {
+  .blogs-center {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .blogs-center2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
@@ -94,11 +101,4 @@ img {
   width: var(--fluid-width);
   max-width: var(--max-width);
   margin: 0 auto;
-}
-
-@media screen and (max-width: 450px) {
-  .blogs-center {
-    display: flex;
-    flex-direction: column;
-  }
 }
